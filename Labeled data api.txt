@@ -1,0 +1,7 @@
+!pip install roboflow
+
+from roboflow import Roboflow
+rf = Roboflow(api_key="7QsEv54uizzlrvPZ972Z")
+project = rf.workspace("fpy").project("smart-survellaince-lens-2")
+version = project.version(1)
+dataset = version.download("yolov8")
