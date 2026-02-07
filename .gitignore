@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model files (large)
+*.h5
+*.hdf5
+*.pkl
+*.pt
+*.pth
+*.onnx
+saved_models/
+
+# Data (large files - use Git LFS or keep on Drive)
+*.csv
+*.json
+*.zip
+*.tar.gz
+datasets/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
