@@ -165,6 +165,22 @@ model.export(format='onnx')
 
 ## 7. Performance Targets
 
+
+## 7. Model Performance
+
+### v2 Metrics (2026-02-14)
+| Metric | v1 (Original) | v2 (Fine-tuned) |
+|--------|--------------|----------------|
+| mAP50  | 0.7255       | 0.7536         |
+| mAP50-95 | 0.3322     | 0.3513         |
+| Precision | 0.8410    | 0.8495         |
+| Recall    | 0.6213    | 0.6053         |
+
+**Per-class AP50:** Fighting 0.80 | Fire 0.82 | Gun 0.60 | Knife 0.79
+
+Test video: Only 1 true alert (Gun), no false positives.
+
+### Performance Targets
 | Metric | Target | SRS Reference |
 |--------|--------|---------------|
 | Alert latency | < 30 seconds from detection to notification | NFR-1.1 |
@@ -177,6 +193,14 @@ model.export(format='onnx')
 ---
 
 ## 8. Related Documents
+
+## 9. Expanding the Dataset for v3
+
+To further improve gun/weapon detection:
+1. Go to [Roboflow Universe](https://universe.roboflow.com/) and search for "gun detection" or "weapon detection" datasets.
+2. For each dataset, click **Download Dataset → YOLOv8 → show download code** and copy the `workspace`, `project`, and `version`.
+3. Add these to the `ADDITIONAL_DATASETS` list in **finetune_smart_lens_v2.ipynb** (see template in Cell 2B).
+4. Run the notebook to merge, fine-tune, and export a new model.
 
 - [PROJECT_OVERVIEW.md](PROJECT_OVERVIEW.md) — High-level project summary
 - [SRS.md](SRS.md) — Full Software Requirements Specification

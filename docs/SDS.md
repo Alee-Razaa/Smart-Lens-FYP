@@ -1,4 +1,19 @@
 # 🏗️ Software Design Specification (SDS)
+#
+# === Model Results (as of 2026-02-14) ===
+#
+# | Metric     | v1 (Original) | v2 (Fine-tuned) |
+# |------------|--------------|----------------|
+# | mAP50      | 0.7255       | 0.7536         |
+# | mAP50-95   | 0.3322       | 0.3513         |
+# | Precision  | 0.8410       | 0.8495         |
+# | Recall     | 0.6213       | 0.6053         |
+#
+# **Per-class AP50:** Fighting 0.80 | Fire 0.82 | Gun 0.60 | Knife 0.79
+#
+# Test video: Only 1 true alert (Gun), no false positives.
+#
+# **Next step:** For v3, expand gun/weapon data using Roboflow Universe (see README and DATASET.md for instructions).
 
 > **Smart Lens CCTV Surveillance System — Technical Blueprint**
 
