@@ -8,13 +8,14 @@ build/
 
 # Virtual environments
 venv/
+.venv/
 env/
 .env
 
 # Jupyter
 .ipynb_checkpoints/
 
-# Model files (large)
+# Model files (large - use Google Drive)
 *.h5
 *.hdf5
 *.pkl
@@ -23,12 +24,32 @@ env/
 *.onnx
 saved_models/
 
+# BUT keep metrics/config JSON files in trained_models
+!Smart-Lens-FYP/trained_models/**/metrics.json
+!Smart-Lens-FYP/trained_models/**/training_config.json
+
 # Data (large files - use Git LFS or keep on Drive)
-*.csv
-*.json
 *.zip
 *.tar.gz
-datasets/
+
+# Video files
+*.mp4
+*.avi
+*.mkv
+*.mov
+
+# Dataset images (keep labels only for reference)
+Smart-Lens-FYP/dataset/train/images/
+Smart-Lens-FYP/dataset/valid/images/
+Smart-Lens-FYP/dataset/test/images/
+
+# Detection output files
+detection_log_*.csv
+v2_output_*.mp4
+screenshot_*.png
+
+# Duplicate/backup folders
+Smart-Lens-FYP-20260213T*/
 
 # IDE
 .vscode/

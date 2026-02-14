@@ -1,0 +1,15 @@
+names:
+- Fighting
+- Fire
+- Gun
+- Knife
+nc: 4
+roboflow:
+  license: CC BY 4.0
+  project: smart-survellaince-lens-2
+  url: https://universe.roboflow.com/fpy/smart-survellaince-lens-2/dataset/1
+  version: 1
+  workspace: fpy
+test: ../test/images
+train: ../train/images
+val: ../valid/images
