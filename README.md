@@ -13,7 +13,7 @@ Smart Lens is an **AI-powered surveillance solution** that transforms traditiona
 ### Key Features
 - 🤖 **AI Threat Detection** — Fighting, fire, guns, knives (theft detection was in the original proposal and is not implemented yet)
 - 📱 **Instant Mobile Alerts** — Push notifications with video evidence
-- 📹 **Smart Recording** — The detector runs only on frames with motion, and only confirmed threats are saved (saves storage)
+- 📹 **Smart Recording** — The detector runs only on frames with motion, and only suspicious events are saved (saves storage)
 - 🎥 **Multi-Camera Support** — Monitor multiple cameras from one dashboard
 - 🚨 **Alert Forwarding** — Share alerts with law enforcement or contacts
 - 🔐 **2FA Security** — JWT + OTP authentication
