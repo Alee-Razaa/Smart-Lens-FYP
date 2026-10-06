@@ -44,7 +44,7 @@
     "workspace": "workspace-slug",
     "project": "project-slug",
     "version": 1,
-    "api_key": "7QsEv54uizzlrvPZ972Z",
+    "api_key": "YOUR_ROBOFLOW_API_KEY",
     "class_map": {"source_class_name": target_id},  # Map source → your IDs
     "target_classes": [2],  # Which of YOUR classes this dataset covers
 },

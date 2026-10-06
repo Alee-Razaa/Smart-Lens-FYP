@@ -27,7 +27,7 @@ The labeled dataset for training the Smart Lens threat detection model is hosted
 !pip install roboflow
 
 from roboflow import Roboflow
-rf = Roboflow(api_key="7QsEv54uizzlrvPZ972Z")
+rf = Roboflow(api_key="YOUR_ROBOFLOW_API_KEY")
 project = rf.workspace("fpy").project("smart-survellaince-lens-2")
 version = project.version(1)
 dataset = version.download("yolov8")
