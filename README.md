@@ -8,12 +8,12 @@
 
 ## 🎯 What is Smart Lens?
 
-Smart Lens is an **AI-powered surveillance solution** that transforms traditional passive CCTV systems into intelligent, proactive security tools for small businesses. It uses **YOLOv8 deep learning** to detect threats like theft, violence, fire, and weapons in real-time — instantly alerting shopkeepers via a mobile app.
+Smart Lens is an **AI-powered surveillance solution** that transforms traditional passive CCTV systems into intelligent, proactive security tools for small businesses. It uses **YOLOv8 deep learning** to detect fighting, fire, guns and knives in real time — instantly alerting shopkeepers via a mobile app.
 
 ### Key Features
-- 🤖 **AI Threat Detection** — Theft, violence, fire, guns, knives
+- 🤖 **AI Threat Detection** — Fighting, fire, guns, knives (theft detection was in the original proposal and is not implemented yet)
 - 📱 **Instant Mobile Alerts** — Push notifications with video evidence
-- 📹 **Smart Recording** — Only saves suspicious events (saves storage)
+- 📹 **Smart Recording** — The detector runs only on frames with motion, and only confirmed threats are saved (saves storage)
 - 🎥 **Multi-Camera Support** — Monitor multiple cameras from one dashboard
 - 🚨 **Alert Forwarding** — Share alerts with law enforcement or contacts
 - 🔐 **2FA Security** — JWT + OTP authentication
